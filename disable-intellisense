@@ -1,0 +1,5 @@
+#!/bin/bash 
+
+mv intellisense.vim intellisense.vim~ 2>/dev/null
+mv bundle/coc.nvim bundle/coc.nvim~ 2>/dev/null
+
