@@ -13,7 +13,7 @@ let mapleader=" "
 " Set up NERDTree 
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "right"
-nnoremap <leader>f :NERDTreeToggle
+nnoremap <leader>nt :NERDTreeToggle
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif 
 
@@ -23,7 +23,7 @@ let g:airline_theme='onedark'
 
 " Terminal 
 set termwinsize=10x0
-nnoremap <leader>t :below terminal 
+nnoremap <leader>tm :below terminal 
 
 " Shift tab should go back
 nnoremap <S-Tab> <<
