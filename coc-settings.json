@@ -1,0 +1,6 @@
+{
+    "clangd.disableSnippetCompletion": true,
+    "clangd.arguments": [
+        "-header-insertion=never"
+    ]
+}
