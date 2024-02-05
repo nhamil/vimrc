@@ -2,8 +2,9 @@ execute pathogen#infect()
 
 " Basic setup 
 set ignorecase
-set nu 
+set number
 set noea 
+set relativenumber
 set shortmess+=I
 
 " Set leader to spacebar 
