@@ -7,6 +7,16 @@ set noea
 set relativenumber
 set shortmess+=I
 
+" Window navigation 
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <Tab> <C-w>w
+nnoremap <S-Tab> <C-w>W
+nnoremap <CR> <C-w>x
+nnoremap <BS> <C-w>=
+
 " Set leader to spacebar 
 nnoremap <SPACE> <Nop>
 let mapleader=" "
@@ -25,7 +35,6 @@ set termwinsize=10x0
 nnoremap <leader>tm :below terminal 
 
 " Shift tab should go back
-nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 
 " Visual mode tab 
