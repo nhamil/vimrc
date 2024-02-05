@@ -14,7 +14,7 @@ let mapleader=" "
 " Set up NERDTree 
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "right"
-nnoremap <leader>nt :NERDTreeToggle
+nnoremap <leader>nt :NERDTreeFocus
 
 " Set up vim-airline
 set laststatus=2
