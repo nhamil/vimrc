@@ -24,7 +24,7 @@ let mapleader=" "
 " Set up NERDTree 
 let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "right"
-nnoremap <leader>nt :NERDTreeFocus
+nnoremap <leader>nt :NERDTreeFocus<CR>
 
 " Set up vim-airline
 set laststatus=2
@@ -32,7 +32,7 @@ let g:airline_theme='onedark'
 
 " Terminal 
 set termwinsize=10x0
-nnoremap <leader>tm :below terminal 
+nnoremap <leader>tm :below terminal<CR>
 
 " Shift tab should go back
 inoremap <S-Tab> <C-d>
