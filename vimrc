@@ -46,6 +46,7 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set cino=(0,W4,(s,m1
 
 " Color scheme
 set term=xterm-256color
