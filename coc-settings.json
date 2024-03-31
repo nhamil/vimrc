@@ -2,5 +2,16 @@
     "clangd.disableSnippetCompletion": true,
     "clangd.arguments": [
         "-header-insertion=never"
-    ]
+    ], 
+    "languageserver": {
+        "csharp-ls": {
+          "command": "csharp-ls",
+          "filetypes": ["cs"],
+          "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+        }
+    },
+    "suggest.selection": "none",
+    "javascript.suggest.completeFunctionCalls": false, 
+    "typescript.suggest.completeFunctionCalls": false,
+    "suggest.snippetsSupport": false
 }
