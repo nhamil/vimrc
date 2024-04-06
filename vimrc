@@ -1,5 +1,9 @@
 execute pathogen#infect()
 
+" Read .vimrc in the current directory 
+set exrc 
+set secure 
+
 " Basic setup 
 set ignorecase
 set number
