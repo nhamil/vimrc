@@ -1,4 +1,4 @@
 #!/bin/bash
 
-vim +'CocInstall coc-json coc-tsserver coc-html coc-css coc-sh coc-clangd coc-java coc-jedi coc-yaml' 
+vim +'CocInstall coc-json coc-tsserver coc-html coc-css coc-sh coc-clangd coc-java coc-jedi coc-yaml coc-toml' 
 
