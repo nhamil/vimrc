@@ -26,7 +26,7 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 
 " Set up NERDTree 
-let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeQuitOnOpen = 0
 let g:NERDTreeWinPos = "right"
 nnoremap <leader>nt :NERDTreeFocus<CR>
 
