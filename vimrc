@@ -20,6 +20,8 @@ nnoremap <Tab> <C-w>w
 nnoremap <S-Tab> <C-w>W
 nnoremap <CR> <C-w>x
 nnoremap <BS> <C-w>=
+nnoremap <C-I> i <ESC>r
+nnoremap <C-A> a <ESC>r
 
 " Set leader to spacebar 
 nnoremap <SPACE> <Nop>
