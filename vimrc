@@ -54,6 +54,9 @@ set shiftwidth=4
 set expandtab
 set cino=(0,W4,(s,m1
 
+" File type spacing overrides
+autocmd FileType markdown setlocal ts=2 sts=2 sw=2
+
 " Color scheme
 set term=xterm-256color
 set t_Co=256
