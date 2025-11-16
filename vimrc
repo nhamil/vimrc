@@ -18,7 +18,7 @@ let mapleader=" "
 " File searching 
 set path+=**
 set wildmenu
-set wildmode=full
+set wildmode=longest:full,full
 set wildignore+=*.o,*.obj,*.d,*.swp,*~,*.pyc,.git,*/build/*,*/Build/*,*/.git/*,*/node_modules/*,*/dist/*
 set wildignorecase
 set wildoptions=pum,fuzzy
@@ -42,6 +42,10 @@ nnoremap <C-A> a <ESC>r
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinPos = "right"
 nnoremap <leader>nt :NERDTreeFocus<CR>
+
+" Splitting
+set splitright
+set splitbelow
 
 " Set up vim-airline
 set laststatus=2
