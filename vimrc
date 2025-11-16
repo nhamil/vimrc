@@ -20,6 +20,8 @@ nnoremap <Tab> <C-w>w
 nnoremap <S-Tab> <C-w>W
 nnoremap <CR> <C-w>x
 nnoremap <BS> <C-w>=
+
+" Add single character
 nnoremap <C-I> i <ESC>r
 nnoremap <C-A> a <ESC>r
 
@@ -28,7 +30,7 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 
 " Set up NERDTree 
-let g:NERDTreeQuitOnOpen = 0
+let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinPos = "right"
 nnoremap <leader>nt :NERDTreeFocus<CR>
 
@@ -52,10 +54,21 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 set cino=(0,W4,(s,m1
 
 " File type spacing overrides
 autocmd FileType markdown setlocal ts=2 sts=2 sw=2
+
+" Tab shortcuts 
+function! GdTabSplitAndBack() 
+    execute "tab sp"
+    execute "normal gd" 
+endfunction
+nnoremap <leader>td :call GdTabSplitAndBack()<CR>
+nnoremap <leader>tn :tabnew<CR>
+nnoremap <leader>ts :tab sp<CR>
+nnoremap <leader>tb :tab sp <bar> tabp<CR>
 
 " Color scheme
 set term=xterm-256color
