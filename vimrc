@@ -11,6 +11,19 @@ set noea
 set relativenumber
 set shortmess+=I
 
+" Set leader to spacebar 
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
+" File searching 
+set path+=**
+set wildmenu
+set wildmode=full
+set wildignore+=*.o,*.obj,*.d,*.swp,*~,*.pyc,.git,*/build/*,*/Build/*,*/.git/*,*/node_modules/*,*/dist/*
+set wildignorecase
+set wildoptions=pum,fuzzy
+nnoremap <leader>fi :find<SPACE>
+
 " Window navigation 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -24,10 +37,6 @@ nnoremap <BS> <C-w>=
 " Add single character
 nnoremap <C-I> i <ESC>r
 nnoremap <C-A> a <ESC>r
-
-" Set leader to spacebar 
-nnoremap <SPACE> <Nop>
-let mapleader=" "
 
 " Set up NERDTree 
 let g:NERDTreeQuitOnOpen = 1
