@@ -10,6 +10,8 @@ set number
 set noea 
 set relativenumber
 set shortmess+=I
+set ttyfast
+set lazyredraw
 
 " Set leader to spacebar 
 nnoremap <SPACE> <Nop>
@@ -34,10 +36,6 @@ nnoremap <S-Tab> <C-w>W
 nnoremap <CR> <C-w>x
 nnoremap <BS> <C-w>=
 
-" Add single character
-nnoremap <C-I> i <ESC>r
-nnoremap <C-A> a <ESC>r
-
 " Set up NERDTree 
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeWinPos = "right"
@@ -46,6 +44,12 @@ nnoremap <leader>nt :NERDTreeFocus<CR>
 " Splitting
 set splitright
 set splitbelow
+nnoremap <leader>vs :vsplit<CR>
+nnoremap <leader>hs :split<CR>
+nnoremap <M-Right> :vertical resize +40<CR>
+nnoremap <M-Left> :vertical resize -40<CR>
+nnoremap <M-Up> :resize +20<CR>
+nnoremap <M-Down> :resize -20<CR>
 
 " Set up vim-airline
 set laststatus=2
@@ -80,6 +84,8 @@ function! GdTabSplitAndBack()
 endfunction
 nnoremap <leader>td :call GdTabSplitAndBack()<CR>
 nnoremap <leader>tn :tabnew<CR>
+nnoremap <leader>tc :tabclose<CR>
+nnoremap <leader>to :tabonly<CR>
 nnoremap <leader>ts :tab sp<CR>
 nnoremap <leader>tb :tab sp <bar> tabp<CR>
 
