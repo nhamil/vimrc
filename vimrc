@@ -74,6 +74,9 @@ set expandtab
 set autoindent
 set cino=(0,W4,(s,m1
 
+" File type associations
+autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
+
 " File type spacing overrides
 autocmd FileType markdown setlocal ts=2 sts=2 sw=2
 
