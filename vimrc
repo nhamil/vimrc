@@ -46,10 +46,10 @@ set splitright
 set splitbelow
 nnoremap <leader>vs :vsplit<CR>
 nnoremap <leader>hs :split<CR>
-nnoremap <M-Right> :vertical resize +40<CR>
-nnoremap <M-Left> :vertical resize -40<CR>
-nnoremap <M-Up> :resize +20<CR>
-nnoremap <M-Down> :resize -20<CR>
+nnoremap <M-Right> :vertical resize +10<CR>
+nnoremap <M-Left> :vertical resize -10<CR>
+nnoremap <M-Up> :resize +5<CR>
+nnoremap <M-Down> :resize -5<CR>
 
 " Set up vim-airline
 set laststatus=2
